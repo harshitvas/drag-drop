@@ -1,0 +1,35 @@
+<!-- HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Drag and Drop Example</h1>
+    <div id="message-area" class="message-area"></div>
+
+    <div class="main-body">
+        <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Container 1</h2>
+            <div class="item-list">
+                <div id="item1" class="item draggable" draggable="true" ondragstart="drag(event)">Item 1</div>
+                <div id="item2" class="item draggable" draggable="true" ondragstart="drag(event)">Item 2</div>
+                <div id="item3" class="item draggable" draggable="true" ondragstart="drag(event)">Item 3</div>
+            </div>
+        </div>
+
+        <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Container 2</h2>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
